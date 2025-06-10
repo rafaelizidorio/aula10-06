@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Escolar Simples</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+        
+        button {
+            background-color: #050505;
+            color: white;
+            padding: 8px 12px;
+            border: 1px solid #fff 0.20;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        
+        img {
+            max-width: 100px;
+            height: 100px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+        <h2>Painel Escolar</h2>
+
+        <br>
+        <br>
+
+        <button type="button" onclick="document.getElementById('ocult').style.display='none'">Ocultar texto!</button>
+        <p id="ocult" style="display: block;">Hello JS!</p>
+        <button type="button" onclick="document.getElementById('ocult').style.display='block'">Exibir texto!</button>
+
+        <br>
+        <br>
+
+        <button onclick="document.getElementById('alterarimg').src='https://images.emojiterra.com/twitter/v14.0/1024px/1f60a.png'">liga</button>
+        <img id="alterarimg" src="https://images.emojiterra.com/twitter/v14.0/1024px/1f60a.png" style="width: 100px">
+        <button onclick="document.getElementById('alterarimg').src='https://media.istockphoto.com/id/513745794/pt/vetorial/velho-pensativo-de-%C3%ADcones.jpg?s=612x612&w=0&k=20&c=usj3XqnutM-KC7I1ZlVmBH3KjahJ1q-4kVKxxWPXpnw='">desliga</button>
+
+        <br>
+        <br>
+
+        <p id="mudarfrase">O botão mudará essa frase...</p>
+        <button type="button" onclick='document.getElementById("mudarfrase").innerHTML="Olá, pessoal! Tudo bem?"'>Mudar frase</button>
+
+        <br>
+        <br>
+
+        <button type="button" id="alterarbotao" onclick='document.getElementById("alterarbotao").innerHTML="Nova frase do botão!"'>Alterar texto do botão</button>
+
+</body>
+</html>
